@@ -7,4 +7,4 @@ export const PageNotFound = () => {
       <p className='text'>Woops... Something went wrong!</p>
     </div>
   );
-}
+};

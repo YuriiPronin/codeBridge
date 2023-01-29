@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Header } from '../Header/Header';
 import { CardBody } from '../Body/CardBody';
 import { Article } from '../../types/Article';
-import { Loader } from '../Loader/Loader';
 
 type Props = {
   setId: (value: number) => void;

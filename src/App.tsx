@@ -11,24 +11,22 @@ export function App() {
   const [articles, setArticles] = useState<Article[]>([]);
 
   return (
-    <>
-      <Routes>
-        <Route
-          path="/codeBridge"
-          element={
-            <HomePage
-              setId={setId}
-              articles={articles}
-              setArticles={setArticles}
-            />
-          }
-        />
-        <Route
-          path="/:id"
-          element={<ArticlePage id={id} articles={articles} />}
-        />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route
+        path="/codeBridge"
+        element={
+          <HomePage
+            setId={setId}
+            articles={articles}
+            setArticles={setArticles}
+          />
+        }
+      />
+      <Route
+        path="/:id"
+        element={<ArticlePage id={id} articles={articles} />}
+      />
+      <Route path="*" element={<PageNotFound />} />
+    </Routes>
   );
 }

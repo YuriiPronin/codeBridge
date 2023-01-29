@@ -45,7 +45,7 @@ export const ArticlePage: React.FC<Props> = ({ id, articles }) => {
           <Button
             size="small"
             color="primary"
-            onClick={(event) => (window.location.href = `/codeBridge`)}
+            onClick={(event) => (window.location.href = '/codeBridge')}
           >
             Back to home page
           </Button>

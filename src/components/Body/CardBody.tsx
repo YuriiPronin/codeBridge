@@ -35,7 +35,7 @@ export const CardBody: React.FC<Props> = ({
       const allArticles = await getAllArticles();
       setArticles(allArticles);
     } catch (error) {
-      throw new Error(`error`);
+      throw new Error('error');
     }
   }
 
